@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load i18n crispy_forms_tags %}
+{% block title %}
+    {% trans "Contacts" %}
+{% endblock title %}
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-xl-6 gy-2 g-2 mt-2">
+            <div class="card-custom bg-base shadow-effect rounded-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-4">
+                            <div class="fs-3 text-center mb-2">{% trans "Contacts" %}</div>
+                            <h5>{% trans "Address: Menzelinskiy Trakt, 9, Naberezhnye Chelny, Republic of Tatarstan, 423800" %}</h5>
+                            <h5>
+                                {% trans "Phone: " %}<a href="tel:+74951234567" class="link-custom">+7 (495) 123-45-67</a>
+                            </h5>
+                            <h5>
+                                {% trans "Email: " %}<a href="mailto:autokammotors@mail.ru" class="link-custom">autokammotors@mail.ru</a>
+                            </h5>
+                        </div>
+                        <div class="card-custom-image rounded-4 text-center mb-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.071576304074!2d52.39248707720492!3d55.7051275956618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e01f5c687c49bb%3A0xfa1cafb9c50fadb7!2z0J7QntCeINCQ0LLRgtC-0JrQsNC80JzQvtGC0L7RgNGB!5e0!3m2!1sru!2sru!4v1685031621942!5m2!1sru!2sru"
+                                    width="600"
+                                    height="450"
+                                    style="border:0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="rounded-4"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

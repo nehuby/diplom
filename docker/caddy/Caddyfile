@@ -1,0 +1,16 @@
+nehuby.fvds.ru
+handle_path /static/* {
+		# STATIC_ROOT
+		root * /var/www/django/static
+		file_server {
+			precompressed br gzip
+		}
+	}
+
+	handle_path /media/* {
+		# MEDIA_ROOT
+		root * /var/www/django/media
+		file_server
+	}
+
+	reverse_proxy django:5000

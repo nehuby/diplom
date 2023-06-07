@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n crispy_forms_tags static %}
+{% block title %}
+  {% trans "Login" %}
+{% endblock title %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="bg-base shadow-effect p-4 rounded-4 my-2">
+        <div class="fs-3 text-center">{% trans "Login" %}</div>
+        <form method="post">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <div class="mb-3">
+            <a href="{% url 'password_reset_form' %}" class="link-custom">{% trans "Forgot password?" %}</a>
+          </div>
+          <button class="btn btn-brand w-100">{% trans "Login" %}</button>
+        </form>
+        <hr />
+        <div class="text-center">
+          {% trans "No account? " %}<a href="{% url 'signup' %}" class="link-custom">{% trans "Create an account" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n crispy_forms_tags static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="bg-base shadow-effect p-4 rounded-4 my-2">
+                <div class="text-center">{% trans "Congrats! you just verified your account" %}</div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

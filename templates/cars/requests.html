@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n crispy_forms_tags %}
+{% block title %}
+    {% trans "Profile" %}
+{% endblock title %}
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-xl-6 mb-2">
+            <div class="bg-base p-4 rounded-4 my-2">
+                <div class="fs-3 text-center">{% trans "Test drive cars" %}</div>
+            </div>
+        </div>
+    </div>
+    {% if requests %}
+        {% for request in requests %}
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="bg-base shadow-effect p-4 rounded-4 my-2">
+                        <div class="fs-4 text-center">
+                            <a href="{% url 'car' request.car.id %}" class="link-custom">{{ request.car }}</a>
+                            <div>{{ request.date }}</div>
+                            <div>{{ request.status }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock content %}
