@@ -24,6 +24,12 @@ USER django
 
 COPY --chown=django:django . .
 
+COPY --chown=django:django . /var/www
+
+RUN python manage.py collectstatic
+
+RUN python manage.py compilemessages 
+
 ENTRYPOINT ["bash", "/usr/src/app/entrypoint.sh"]
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

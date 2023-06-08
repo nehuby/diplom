@@ -1,0 +1,573 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-08 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: cars/forms.py:35 cars/forms.py:38 templates/cars/cars.html:14
+msgid "Search"
+msgstr "Поиск"
+
+#: cars/models.py:10
+msgid "name"
+msgstr "название"
+
+#: cars/models.py:11
+msgid "logo"
+msgstr "логотип"
+
+#: cars/models.py:12
+msgid "country"
+msgstr "страна"
+
+#: cars/models.py:15
+msgid "brand"
+msgstr "марка"
+
+#: cars/models.py:16
+msgid "brands"
+msgstr "марки"
+
+#: cars/models.py:24
+msgid "Sedan"
+msgstr "Седан"
+
+#: cars/models.py:25
+msgid "Limousine"
+msgstr "Лимузин"
+
+#: cars/models.py:26
+msgid "Hatchback"
+msgstr "Хэтчбек"
+
+#: cars/models.py:27
+msgid "Liftback"
+msgstr "Лифтбек"
+
+#: cars/models.py:28
+msgid "Station wagon"
+msgstr "Универсал"
+
+#: cars/models.py:29
+msgid "Coupe"
+msgstr "Купе"
+
+#: cars/models.py:30
+msgid "Convertible"
+msgstr "Кабриолет"
+
+#: cars/models.py:31
+msgid "Roadster"
+msgstr "Родстер"
+
+#: cars/models.py:32
+msgid "Targa"
+msgstr "Тарга"
+
+#: cars/models.py:33
+msgid "Minivan"
+msgstr "Минивэн"
+
+#: cars/models.py:34
+msgid "Pickup"
+msgstr "Пикап"
+
+#: cars/models.py:35
+msgid "Crossover"
+msgstr "Кроссовер"
+
+#: cars/models.py:36
+msgid "Coupe-crossover"
+msgstr "Купе-кроссовер"
+
+#: cars/models.py:37
+msgid "Coupe-cabriolet"
+msgstr "Купе-кабриолет"
+
+#: cars/models.py:38
+msgid "Speedster"
+msgstr "Спидстер"
+
+#: cars/models.py:39
+msgid "SUV"
+msgstr "Внедорожник"
+
+#: cars/models.py:42
+msgid "Automatic"
+msgstr "Автоматическая"
+
+#: cars/models.py:43
+msgid "Manual"
+msgstr "Механическая"
+
+#: cars/models.py:44
+msgid "Semi-automatic"
+msgstr "Полуавтоматическая"
+
+#: cars/models.py:47
+msgid "Front wheel drive"
+msgstr "Передний привод"
+
+#: cars/models.py:48
+msgid "Rear wheel drive"
+msgstr "Задний привод"
+
+#: cars/models.py:49
+msgid "Four wheel drive"
+msgstr "Полный привод"
+
+#: cars/models.py:52
+msgid "Gasoline"
+msgstr "Бензин"
+
+#: cars/models.py:53
+msgid "Diesel"
+msgstr "Дизель"
+
+#: cars/models.py:54
+msgid "Hybrid"
+msgstr "Гибрид"
+
+#: cars/models.py:55
+msgid "Electric"
+msgstr "Электрический"
+
+#: cars/models.py:58
+msgid "car brand"
+msgstr "марка автомобиля"
+
+#: cars/models.py:60
+msgid "car model"
+msgstr "модель автомобиля"
+
+#: cars/models.py:62
+msgid "body type"
+msgstr "тип кузова"
+
+#: cars/models.py:64
+msgid "year of issue"
+msgstr "год выпуска"
+
+#: cars/models.py:65
+msgid "equipment name"
+msgstr "название комплектации"
+
+#: cars/models.py:67
+msgid "equipment description"
+msgstr "описание комплектации"
+
+#: cars/models.py:70
+msgid "transmission"
+msgstr "трансмиссия"
+
+#: cars/models.py:73
+msgid "number of gears"
+msgstr "количество передач"
+
+#: cars/models.py:77
+msgid "drive unit"
+msgstr "тип привода"
+
+#: cars/models.py:80
+msgid "engine's type"
+msgstr "тип двигателя"
+
+#: cars/models.py:82
+msgid "working volume"
+msgstr "рабочий объем"
+
+#: cars/models.py:83
+msgid "engine power"
+msgstr "мощность двигателя"
+
+#: cars/models.py:84
+msgid "price"
+msgstr "цена"
+
+#: cars/models.py:85
+msgid "amount"
+msgstr "количество"
+
+#: cars/models.py:88 cars/models.py:97 cars/models.py:153
+msgid "car"
+msgstr "автомобиль"
+
+#: cars/models.py:89
+msgid "cars"
+msgstr "автомобили"
+
+#: cars/models.py:96 cars/models.py:100
+msgid "photo"
+msgstr "фото"
+
+#: cars/models.py:101
+msgid "photos"
+msgstr "фотографии"
+
+#: cars/models.py:105
+msgid "full name"
+msgstr "полное имя"
+
+#: cars/models.py:106 cars/models.py:152
+msgid "phone"
+msgstr "телефон"
+
+#: cars/models.py:107
+msgid "comments"
+msgstr "комментарии"
+
+#: cars/models.py:110
+msgid "callback"
+msgstr "обратный звонок"
+
+#: cars/models.py:111
+msgid "callbacks"
+msgstr "обратные звонки"
+
+#: cars/models.py:120 cars/models.py:150
+msgid "username"
+msgstr "имя пользователя"
+
+#: cars/models.py:122
+msgid "rating"
+msgstr "рейтинг"
+
+#: cars/models.py:123 cars/models.py:154
+msgid "text"
+msgstr "текст"
+
+#: cars/models.py:124 cars/models.py:155
+msgid "date"
+msgstr "дата"
+
+#: cars/models.py:127
+msgid "review"
+msgstr "отзыв"
+
+#: cars/models.py:128
+msgid "reviews"
+msgstr "отзывы"
+
+#: cars/models.py:145
+msgid "Expect confirmation"
+msgstr "Ожидает подтверждения"
+
+#: cars/models.py:146
+msgid "Approved"
+msgstr "Одобрено"
+
+#: cars/models.py:147 cars/views.py:139
+msgid "Performed"
+msgstr "Выполнено"
+
+#: cars/models.py:157
+msgid "status"
+msgstr "статус"
+
+#: cars/models.py:164 cars/models.py:165
+msgid "test drive"
+msgstr "тест-драйв"
+
+#: cars/validators.py:10
+msgid "The year cannot be greater than the current"
+msgstr "Год не может быть больше текущего"
+
+#: cars/validators.py:12
+msgid "The year cannot be that old"
+msgstr "Год не может быть настолько старым"
+
+#: cars/views.py:72
+msgid "Callback has been left, expect a call"
+msgstr "Оставлен обратный звонок, ожидайте звонка"
+
+#: cars/views.py:85
+msgid "Review was successfully posted on the website"
+msgstr "Отзыв успешно опубликован на сайте"
+
+#: cars/views.py:125
+msgid "Application for a test drive has been successfully left"
+msgstr "Заявка на тест-драйв успешно оставлена"
+
+#: config/settings.py:132
+msgid "Russian"
+msgstr "Русский"
+
+#: config/settings.py:132
+msgid "English"
+msgstr "Английский"
+
+#: templates/cars/brand_detail.html:4
+msgid "Brand information"
+msgstr "Информация о марке"
+
+#: templates/cars/brand_detail.html:38 templates/cars/cars.html:38
+msgid "See more"
+msgstr "Подробнее"
+
+#: templates/cars/brands.html:4 templates/inc/navbar.html:26
+msgid "Brands"
+msgstr "Марки"
+
+#: templates/cars/callback.html:4 templates/cars/callback.html:10
+#: templates/inc/navbar.html:41
+msgid "Callback"
+msgstr "Обратный звонок"
+
+#: templates/cars/callback.html:14 templates/cars/reviews.html:18
+#: templates/cars/test_drive.html:18
+msgid "Send"
+msgstr "Отправить"
+
+#: templates/cars/car_detail.html:4
+msgid "Car information"
+msgstr "Информация об автомобиле"
+
+#: templates/cars/car_detail.html:36
+msgid "Price"
+msgstr "Цена"
+
+#: templates/cars/car_detail.html:40
+msgid "Body type"
+msgstr "Тип кузова"
+
+#: templates/cars/car_detail.html:44
+msgid "Year"
+msgstr "Год"
+
+#: templates/cars/car_detail.html:48
+msgid "Transmission"
+msgstr "Трансмиссия"
+
+#: templates/cars/car_detail.html:52
+msgid "Number of gears"
+msgstr "Количество передач"
+
+#: templates/cars/car_detail.html:56
+msgid "Drive unit"
+msgstr "Тип привода"
+
+#: templates/cars/car_detail.html:60
+msgid "Engine type"
+msgstr "Тип двигателя"
+
+#: templates/cars/car_detail.html:64
+msgid "Working volume"
+msgstr "Рабочий объем"
+
+#: templates/cars/car_detail.html:68
+msgid "Engine power"
+msgstr "Мощность двигателя"
+
+#: templates/cars/car_detail.html:72
+msgid "Amount"
+msgstr "Количество"
+
+#: templates/cars/car_detail.html:76
+msgid "Equipment"
+msgstr "Комплектация"
+
+#: templates/cars/car_detail.html:98
+msgid "Request for test-drive"
+msgstr "Запрос на тест-драйв"
+
+#: templates/cars/car_detail.html:101 templates/cars/reviews.html:22
+msgid "Log in "
+msgstr "Войдите "
+
+#: templates/cars/car_detail.html:101
+msgid "if you want to take a test drive"
+msgstr "если вы хотите пройти тест-драйв"
+
+#: templates/cars/cars.html:4 templates/inc/navbar.html:21
+msgid "Cars"
+msgstr "Автомобили"
+
+#: templates/cars/contacts.html:4 templates/cars/contacts.html:13
+#: templates/inc/navbar.html:36
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/cars/contacts.html:14
+msgid ""
+"Address: Menzelinskiy Trakt, 9, Naberezhnye Chelny, Republic of Tatarstan, "
+"423800"
+msgstr ""
+"Адрес: Мензелинский тракт, 9, Набережные Челны, Республика Татарстан, 423800"
+
+#: templates/cars/contacts.html:16
+msgid "Phone: "
+msgstr "Телефон: "
+
+#: templates/cars/contacts.html:19
+msgid "Email: "
+msgstr "Электронная почта: "
+
+#: templates/cars/requests.html:4 templates/inc/navbar.html:47
+msgid "Requests"
+msgstr "Заявки"
+
+#: templates/cars/requests.html:10
+msgid "Test drive cars"
+msgstr "Тест-драйв автомобилей"
+
+#: templates/cars/reviews.html:4 templates/cars/reviews.html:32
+#: templates/inc/navbar.html:31
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: templates/cars/reviews.html:14
+msgid "Create review"
+msgstr "Оставить отзыв"
+
+#: templates/cars/reviews.html:22
+msgid "if you want to leave reviews"
+msgstr "если вы хотите оставлять отзывы"
+
+#: templates/cars/test_drive.html:4 templates/cars/test_drive.html:13
+msgid "Test drive"
+msgstr "Тест-драйв"
+
+#: templates/inc/navbar.html:53
+msgid "Admin panel"
+msgstr "Панель администратора"
+
+#: templates/inc/navbar.html:62
+msgid "Sign out"
+msgstr "Выход"
+
+#: templates/inc/navbar.html:68
+msgid "Log in"
+msgstr "Вход"
+
+#: templates/inc/navbar.html:73 templates/registration/signup.html:4
+#: templates/registration/signup.html:13 templates/registration/signup.html:17
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: templates/registration/activate_account.html:4
+#, python-format
+msgid "Hey %(user.username)s"
+msgstr "Привет %(user.username)s"
+
+#: templates/registration/activate_account.html:5
+msgid "We noticed you just sign up on our website"
+msgstr "Мы заметили, что вы только что зарегистрировались на нашем сайте"
+
+#: templates/registration/activate_account.html:6
+msgid ""
+"Please <strong>confirm your email address</strong> and activate your account"
+msgstr ""
+"Пожалуйста, <strong>подтвердите свой адрес электронной почты</strong> и "
+"активируйте свою учетную запись"
+
+#: templates/registration/activate_account_invalid.html:10
+msgid "This email confirmation link has expired or is invalid."
+msgstr ""
+"Ссылка для подтверждения по электронной почте устарела или недействительна."
+
+#: templates/registration/check_email.html:4
+#: templates/registration/check_email.html:13
+msgid "Verify your email address"
+msgstr "Подтвердите ваш адрес электронной почты"
+
+#: templates/registration/check_email.html:15
+msgid ""
+"We have sent you an email for verification. Follow the link provided to "
+"complete the registration process. If you don't see the verification email "
+"in your main mailbox, check your spam folder."
+msgstr ""
+"Мы отправили вам письмо для проверки. Чтобы завершить процесс регистрации, "
+"следуйте по предоставленной ссылке. Если вы не видите письма с "
+"подтверждением в основной папке вашей почты, проверьте папку спама."
+
+#: templates/registration/login.html:4 templates/registration/login.html:13
+#: templates/registration/login.html:20 templates/registration/signup.html:21
+msgid "Login"
+msgstr "Вход"
+
+#: templates/registration/login.html:18
+msgid "Forgot password?"
+msgstr "Забыли пароль?"
+
+#: templates/registration/login.html:24
+msgid "No account? "
+msgstr "Нет аккаунта? "
+
+#: templates/registration/login.html:24
+msgid "Create an account"
+msgstr "Создать аккаунт"
+
+#: templates/registration/password_reset_complete.html:11
+msgid ""
+"Password recovery completed. Your password has been saved. You may now sign "
+"in."
+msgstr ""
+"Восстановление пароля завершено. Ваш пароль сохранен. Теперь вы можете войти."
+
+#: templates/registration/password_reset_complete.html:13
+msgid "Sign in"
+msgstr "Войти"
+
+#: templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr "Введите новый пароль"
+
+#: templates/registration/password_reset_confirm.html:13
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: templates/registration/password_reset_done.html:11
+msgid ""
+"We’ve emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly. If you "
+"don’t receive an email, please make sure you’ve entered the address you "
+"entered in your profile, and check your spam folder."
+msgstr ""
+"Мы отправили вам инструкции по установке нового пароля. Если учетная запись "
+"с указанным вами адресом электронной почты существует, вы должны получить их "
+"в ближайшее время. Если вы не получили электронное письмо, убедитесь, что вы "
+"ввели адрес, указанный в вашем профиле, и проверьте папку спама."
+
+#: templates/registration/password_reset_form.html:10
+msgid "Password reset"
+msgstr "Сброс пароля"
+
+#: templates/registration/password_reset_form.html:14
+msgid "Reset"
+msgstr "Сбросить"
+
+#: templates/registration/signup.html:21
+msgid "Have an account? "
+msgstr "Уже есть аккаунт? "
+
+#: templates/registration/success.html:10
+msgid "Congrats! you just verified your account"
+msgstr "Поздравляем! Вы только что подтвердили свою учетную запись"
+
+#: users/forms.py:17
+msgid "Activate Your Account"
+msgstr "Активируйте свою учетную запись"
+
+#: users/models.py:8
+msgid "email address"
+msgstr "адрес электронной почты"
+
+#: users/models.py:9
+msgid "Enter a valid email address"
+msgstr "Введите действительный адрес электронной почты"

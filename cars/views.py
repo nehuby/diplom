@@ -6,7 +6,7 @@ from django.contrib.postgres.search import SearchVector
 from django.core.paginator import Paginator
 from django.db.models import QuerySet
 from django.http import HttpRequest, HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.translation import gettext as _
 from django.views.generic.base import RedirectView, TemplateView
 from django.views.generic.detail import DetailView
@@ -15,6 +15,8 @@ from django.views.generic.list import ListView
 
 from cars import forms, models
 from users.type import Request
+
+from . import forms
 
 
 class IndexRedirectView(RedirectView):
@@ -109,11 +111,22 @@ class ContactTemplateView(TemplateView):
     template_name = "cars/contacts.html"
 
 
-class TestDriveCreateView(CreateView):
-    model = models.TestDrive
-    fields = "__all__"
-    template_name = "cars/test_drive.html"
-    success_url = "/cars/"
+@login_required
+def test_drive_create(request: Request, pk: int) -> HttpResponse:
+    form = forms.TestDriveForm()
+    if request.method == "POST":
+        form = forms.TestDriveForm(request.POST)
+        if form.is_valid():
+            test = form.save(commit=False)
+            test.username = request.user
+            test.car_id = pk
+            test.save()
+            messages.success(
+                request, _(f"Application for a test drive has been successfully left")
+            )
+            return redirect("requests")
+    context = {"form": form}
+    return render(request, "cars/test_drive.html", context)
 
 
 @login_required

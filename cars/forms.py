@@ -1,5 +1,6 @@
 from typing import Any
 
+from bootstrap_datepicker_plus.widgets import DateTimePickerInput
 from captcha.fields import CaptchaField
 from django import forms
 from django.forms import ModelForm
@@ -36,3 +37,13 @@ class PostSearchForm(forms.Form):
         ),
         label=_("Search"),
     )
+
+
+class TestDriveForm(ModelForm[models.TestDrive]):
+    class Meta:
+        model = models.TestDrive
+        fields = ["phone", "text", "date"]
+        widgets = {
+            "text": forms.Textarea({"rows": 3}),
+            "date": DateTimePickerInput(options={"format": "DD.MM.YYYY HH:mm"}),
+        }

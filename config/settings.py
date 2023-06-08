@@ -17,13 +17,14 @@ django_stubs_ext.monkeypatch()
 SECRET_KEY = env.str("DJANGO_SECRET_KEY")
 
 
-DEBUG = False
+DEBUG = True
 
 DEBUG_TOOLBAR_CONFIG = {
     "SHOW_TOOLBAR_CALLBACK": lambda request: True,
 }
 
 ALLOWED_HOSTS: List[str] = []
+# ALLOWED_HOSTS: List[str] = ["nehuby.fvds.ru"]
 
 INTERNAL_IPS = ["127.0.0.1"]
 
@@ -34,8 +35,14 @@ LOGIN_REDIRECT_URL = "cars"
 LOGOUT_REDIRECT_URL = "cars"
 LOGIN_URL = "login"
 
-
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = env.str("EMAIL_HOST")
+# EMAIL_HOST_PASSWORD = env.str("EMAIL_HOST_PASSWORD")
+# EMAIL_HOST_USER = env.str("EMAIL_HOST_USER")
+# EMAIL_PORT = env.int("EMAIL_PORT")
+# EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS")
 
 CAPTCHA_IMAGE_SIZE = (100, 25)
 CAPTCHA_LENGTH = 5
@@ -62,6 +69,7 @@ INSTALLED_APPS = [
     "cars.apps.CarsConfig",
     "users.apps.UsersConfig",
     "django_extensions",
+    "bootstrap_datepicker_plus",
 ]
 
 
@@ -97,21 +105,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql_psycopg2",
-#         "NAME": env.str("POSTGRES_DB"),
-#         "USER": env.str("POSTGRES_USER"),
-#         "PASSWORD": env.str("POSTGRES_PASSWORD"),
-#         "HOST": "postgres",
-#         "PORT": "5432",
-#     }
-# }
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": env.str("POSTGRES_DB"),
+        "USER": env.str("POSTGRES_USER"),
+        "PASSWORD": env.str("POSTGRES_PASSWORD"),
+        "HOST": "postgres",
+        "PORT": "5432",
     }
 }
 
@@ -133,12 +134,16 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# STATIC_ROOT = "/var/www/django/static"
+# STATIC_URL = "static/"
+# STATICFILES_DIRS = [str(BASE_DIR / "static")]
+# MEDIA_ROOT = "/var/www/django/media"
+# MEDIA_URL = "/media/"
 STATIC_URL = "static/"
 STATICFILES_DIRS = [str(BASE_DIR / "static")]
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
-
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
